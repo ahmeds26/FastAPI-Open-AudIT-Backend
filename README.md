@@ -14,6 +14,7 @@
    * **To Setup the project dependencies _LOCALLY_**
 
      **First Method Using Poetry**
+
          1. Install poetry **GLOBALLY** [Poetry Docs](https://python-poetry.org/docs/)
             ```
             $ pipx install poetry
@@ -33,6 +34,7 @@
             ```
 
      **Second Method without Poetry**
+     
          1. Create a virtual environment for the project dependencies using this command:
 
             * **On Linux:**
