@@ -1,0 +1,30 @@
+from dotenv import load_dotenv
+from helpers.generate_secret_key import generate_secret_key
+import os
+
+load_dotenv()
+
+GENERATED_SECRET_KEY = generate_secret_key()
+
+FILE_UPLOAD_DIRECTORY = os.getenv("FILE_UPLOAD_DIRECTORY")
+FILE_MAX_SIZE = os.getenv("FILE_MAX_SIZE")
+FILES_NUMBER_LIMIT = os.getenv("FILES_NUMBER_LIMIT")
+
+OPEN_AUDIT_BASE_URL = os.getenv("OPEN_AUDIT_BASE_URL")
+OPEN_AUDIT_USERNAME = os.getenv("OPEN_AUDIT_USERNAME")
+OPEN_AUDIT_PASSWORD = os.getenv("OPEN_AUDIT_PASSWORD")
+
+JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY") or GENERATED_SECRET_KEY
+JWT_ALGORITHM = os.getenv("JWT_ALGORITHM") or "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES") or str(30)
+
+MYSQL_HOST_NAME = os.getenv("MYSQL_HOST_NAME")
+MYSQL_USER_NAME = os.getenv("MYSQL_USER_NAME")
+MYSQL_USER_PASSWORD = os.getenv("MYSQL_USER_PASSWORD")
+MYSQL_DATABASE_NAME = os.getenv("MYSQL_DATABASE_NAME")
+
+SNIPEIT_BASE_URL = os.getenv("SNIPEIT_BASE_URL")
+SNIPEIT_API_KEY = os.getenv("SNIPEIT_API_KEY")
+
+SYNC_LOOKBACK_DAYS = int(os.getenv("SYNC_LOOKBACK_DAYS", 3))
+
