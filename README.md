@@ -31,6 +31,7 @@
             ```
             $ poetry install
             ```
+            
      **Second Method without Poetry**
          1. Create a virtual environment for the project dependencies using this command:
 
