@@ -12,7 +12,7 @@
 ## ***Installation***
 
    * **To Setup the project dependencies _LOCALLY_**
-   
+
      **First Method Using Poetry**
          1. Install poetry **GLOBALLY** [Poetry Docs](https://python-poetry.org/docs/)
             ```
